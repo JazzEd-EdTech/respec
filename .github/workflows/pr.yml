@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3.1.0
         with:
           node-version: 14
       - name: Cache node modules
@@ -39,7 +39,7 @@ jobs:
     needs: lint
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3.1.0
         with:
           node-version: 14
       - name: Cache node modules
@@ -61,7 +61,7 @@ jobs:
     needs: lint
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3.1.0
         with:
           node-version: 14
       - name: Cache node modules
@@ -86,7 +86,7 @@ jobs:
     needs: lint
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3.1.0
         with:
           node-version: 14
       - name: Cache node modules
